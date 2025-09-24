@@ -1,0 +1,89 @@
+/* Importa a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap' );
+
+
+:root {
+    --cor-primaria: #0a2342;    
+    --cor-secundaria: #2ca58d; 
+    --cor-fundo: #f4f6f8;       
+    --cor-texto: #333;         
+    --cor-branca: #ffffff;     
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6; 
+}
+
+h1, h2, h3 {
+    color: var(--cor-primaria);
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--cor-secundaria);
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 2rem 0;
+}
+
+
+.main-header {
+    background-color: var(--cor-branca );
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    position: sticky; 
+    top: 0;
+    z-index: 1000; 
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0; 
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+.main-nav ul {
+    list-style: none; 
+    display: flex;
+    gap: 1.5rem; 
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: 600;
+    padding: 0.5rem;
+    transition: color 0.3s ease; 
+}
+
+.main-nav a:hover {
+    color: var(--cor-secundaria); 
+    text-decoration: none;
+}
